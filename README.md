@@ -1,6 +1,9 @@
 # CIRWA
 Card Information Recognition Web Application
 
+## Data generation
+
+For data generation see proccesor\dataset\datagen.ipynb
 
 ## Card cropping
 
@@ -11,9 +14,8 @@ The image restricions are:
 1. The image is illuminated evenly
 2. The bank card contrasts with the background 
 
-One can run *sample.py* to see the working pipeline:
+One can run *process.py* to see the working pipeline:
 
 ```bash
-cd proccesor
-python sample.py
+python proccesor/sample.py --input-dir input --output-dir output 
 ```
