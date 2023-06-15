@@ -112,4 +112,4 @@ def get_card_img(img):
     # cv2_imshow(img2show) # вывод обработанного кадра в окно
 
     card_box = choose_card_box(img, boxes, eps = 0.01)
-    return four_point_transform(img, card_box)
+    return four_point_transform(img, card_box), card_box
