@@ -11,7 +11,7 @@ def show_image(img):
     cv2.destroyAllWindows()
 
 
-def get_ref(path=r"!!!YOURPATHHERE!!!\CIRWA\proccesor\digits\ocr_a_reference.png"):
+def get_ref(path="../assets/digits/ocr_a_reference.png"):
     ref = cv2.imread(path)
     ref = cv2.cvtColor(ref, cv2.COLOR_BGR2GRAY)
     ref = cv2.threshold(ref, 100, 255, cv2.THRESH_BINARY)[1]
